@@ -212,7 +212,7 @@ h4 {
   word-spacing: 2px;
   margin: 20px 40px 10em 40px;
   color: #fcf9f9;
-  font-size: 60;
+  font-size: 60px;
   line-height: 1.5
   }
 
@@ -225,11 +225,25 @@ h5 {
   font-weight: normal;
   word-spacing: 2px;
   margin: 20px 40px 10em 40px;
-  color: #fcf9f9;
-  font-size: 60px;
+  color: #E7B868;
+  font-size: 40px;
   line-height: 1.5
   
 }
+
+h6 {
+  text-align: center;
+  padding-left: 8px;
+  padding-right: 8px;
+  font-family: 'Open Sans';
+  letter-spacing: 1.5px;
+  font-weight: normal;
+  word-spacing: 2px;
+  margin: 10px 10px 0em 10px;
+  color: #a5840b;
+  font-size: 30px;
+  line-height: 1.3
+  }
 
 /* Styling anchor link (hyperlink) */
 a {
@@ -386,3 +400,358 @@ footer > div {
   }
 }
 /********** END for dropdown menu in small screen **********/
+
+
+
+
+/********************************************************************************************************************new info///////////////////////////////////////
+
+
+* {
+  /* Defines how the width and height of an element are calculated: should they include padding and borders, or not. */
+  /* box-sizing: border-box; Width and height apply to all parts of the element: content, padding and borders */
+  /* box-sizing: content-box; Width and height only apply to the content of the element */
+  box-sizing: border-box;
+
+
+
+header.food-page {
+  background: #eee url(../images/food-02.jpg) no-repeat center; /* top center bottom - 1/3 of the image full height */
+  background-size: cover;
+  height: 450px;
+}
+
+header.seasoning-page {
+  background: #eee url(../images/seasoning-02.jpg) no-repeat top; /* top center bottom - 1/3 of the image full height */
+  background-size: cover;
+  height: 250px;
+}
+
+header.utensil-page {
+  background: #eee url(../images/utensil-04.jpg) no-repeat center; /* top center bottom - 1/3 of the image full height */
+  background-size: cover;
+  height: 250px;
+}
+
+header.cuttery-page {
+  background: #eee url(../images/cuttery-01.jpg) no-repeat center; /* top center bottom - 1/3 of the image full height */
+  background-size: cover;
+  height: 250px;
+}
+
+header.chef-page {
+  background: #eee url(../images/chef-03.jpg) no-repeat center; /* top center bottom - 1/3 of the image full height */
+  background-size: cover;
+  height: 400px;
+}
+
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 0;
+}
+
+.flex-container > div {
+  width: 33%;
+  padding: 5px;
+}
+
+.flex-container > span {
+  padding: 10px 0px;
+}
+
+section > div.carousel-area {
+  width: 70%;
+  float: left;
+  margin-bottom: 75px;
+  padding: 0px 40px 0px 40px;
+  border-right: 1px solid #555;
+}
+
+article {
+  width: 70%;
+  float: left;
+  margin-bottom: 75px;
+}
+article > div {
+  /* padding: top right bottom left */
+  padding: 0px 40px 0px 40px;
+  border-right: 1px solid #555;
+}
+aside {
+  width: 30%;
+  float: left;
+}
+aside > div {
+  /* padding: top right bottom left */
+  padding: 0px 40px 0px 40px;
+}
+
+aside div li {
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+
+aside > div > div.scrolling {
+  height: 600px;
+  overflow: auto;
+}
+
+aside p.to-top {
+  display: none;
+}
+
+
+
+
+
+/********** BEG for table sorter **********/
+table#courses {
+  border-collapse: collapse; /* in inspector mode - easier to see the difference between collapse and no collapse */
+  border: 1px solid rgba(154, 154, 154, 0.75);
+  text-align: center;
+}
+
+table#courses th:nth-child(1),
+table#courses td:nth-child(1) {
+  width: 35%;
+}
+table#courses th:nth-child(2),
+table#courses td:nth-child(2) {
+  width: 30%;
+}
+table#courses th:nth-child(3),
+table#courses td:nth-child(3) {
+  width: 20%;
+}
+table#courses th:nth-child(4),
+table#courses td:nth-child(4) {
+  width: 15%;
+}
+
+table#courses thead {
+  font-size: 0.7em;
+  text-transform: uppercase;
+}
+table#courses thead th {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 8px;
+}
+table#courses thead th:hover {
+  color: #fff;
+  background-color: #339999;
+  cursor: pointer;
+}
+
+table#courses thead th.tablesorter-headerAsc,
+table#courses thead th.tablesorter-headerDesc {
+  background-color: rgba(0, 102, 102, 0.8);
+}
+
+table#courses tbody {
+  font-size: 0.9em;
+  line-height: 15px;
+}
+
+/*** make sure table#courses tbody tr:nth-child(even) defined before table#courses tbody tr:hover */
+/*** otherwise, it would need to define table#courses tbody tr:nth-child(even):hover*/
+table#courses tbody tr:nth-child(even) {
+  background: rgba(154, 154, 154, 0.25);
+}
+/********** 
+table#courses tbody tr:nth-child(even):hover {
+  color: #fff;
+  background-color: #339999;
+}
+**********/
+
+table#courses tbody tr:hover {
+  color: #fff;
+  background-color: #339999;
+}
+table#courses tbody td {
+  padding: 8px 20px;
+  border-top: 1px solid rgba(154, 154, 154, 0.75);
+  border-right: 1px solid rgba(154, 154, 154, 0.75);
+}
+table#courses tbody td img {
+  width: 100px;
+  margin: 0 10px 0 0;
+  border: 1px solid rgba(154, 154, 154, 0.75);
+}
+/********** END for table sorter **********/
+
+/********** BEG accordion **********/
+.accordion {
+  color: #00a2ff;
+  cursor: pointer;
+  font-size: 15px;
+  padding-bottom: 10px;
+}
+
+.active,
+.accordion:hover {
+  color: #339999;
+}
+
+.panel {
+  display: none;
+  overflow: hidden;
+}
+/********** END accordion **********/
+
+/********** BEG flip card **********/
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  margin-bottom: 35px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+/* Style the front side text */
+.flip-card-front-text {
+  color: #262727;
+  padding: 10px;
+}
+
+/* Style the back side text */
+.flip-card-back-text {
+  color: #339999;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-size: 1.1em;
+  font-weight: normal;
+  letter-spacing: 2px;
+}
+/********** END flip card **********/
+
+@media screen and (max-width: 750px) {
+  /*header {
+    height: 240px;
+  }*/
+  header a.logo {
+    width: 120px;
+    height: 44px;
+  }
+  /*** for carousel area ***/
+  section > div.carousel-area {
+    width: 100%;
+    float: none;
+    margin-bottom: 40px;
+    /* padding: top right bottom left */
+    padding: 0px 40px 30px 40px;
+    border-right: none;
+    border-bottom: 1px solid #555;
+  }
+  /*** for carousel area ***/
+  article {
+    width: 100%;
+    float: none;
+    margin-bottom: 40px;
+  }
+  article > div {
+    margin: 0px 40px;
+    /* padding: top right bottom left */
+    padding: 0px 0px 30px 0px;
+    border-right: none;
+    border-bottom: 1px solid #555;
+  }
+  aside {
+    width: 100%;
+    float: none;
+  }
+  aside p.to-top {
+    display: block;
+  }
+
+  nav {
+    /* padding: top right bottom left */
+    padding: 60px 0px 0px 20px;
+  }
+  nav > ul {
+    padding-left: 0px;
+    padding-right: 20px;
+  }
+  nav > ul > li > a {
+    /* padding: top right bottom left */
+    padding: 8px 12px 10px 12px;
+  }
+  .flex-container > div {
+    width: 25%;
+  }
+  .flex-container > span > h2 {
+    text-align: center;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  video {
+    display: none;
+  }
+}
+
+/********** BEG stack up menu items in small screen **********
+@media screen and (max-width: 500px) {
+  nav {
+    padding-top: 60px;
+    padding-left: 0px;
+  }
+  nav > ul {
+    padding-right: 0px;
+  }
+  nav > ul > li,
+  nav > ul > li > a:hover {
+    width: 100%;
+    float: none;
+    text-align: center;
+  }
+  nav > ul > li > a {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  header {
+    height: 240px;
+  }
+}
+********** END stack up menu items in small screen **********/
