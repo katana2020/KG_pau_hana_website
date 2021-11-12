@@ -177,7 +177,7 @@ header.page-5 {
     background:  url(../images/sunset.jpg) no-repeat center; /* top center bottom - 1/3 of the image full height */
     background-size: cover;
     height: 600px;
-    box-shadow:inset 0 0 0 2000px rgba(36, 35, 35, 0.4)
+    
 }
 
 header.buying-guide {
@@ -195,11 +195,15 @@ h1 {
   font-weight: bold;
 }
 
+h2 {
+  font-size:30px;
+}
+
 h3 {
-  margin: 40px 0px 1.5em 0px;
-  color: #339999;
-  font-size: 1.5em;
-  font-weight: normal;
+  margin: 40px 0px 1.5em 35px;
+  color: #076d6f;
+  font-size: 1.8em;
+  font-weight: bold;
   letter-spacing: 2px;
   text-transform: uppercase;
   text-align: center;
@@ -216,8 +220,8 @@ h4 {
   font-weight: normal;
   word-spacing: 2px;
   margin: 20px 40px 10em 40px;
-  color: #fcf9f9;
-  font-size: 20px;
+  color: #e1b76d;
+  font-size: 16px;
   line-height: 1.5
   }
 
@@ -237,18 +241,34 @@ h5 {
 }
 
 h6 {
-  text-align: center;
+  text-align: right;
   padding-left: 8px;
-  padding-right: 8px;
+  padding-right: 30px;
+  padding-top: 40px;
   font-family: 'Open Sans';
-  letter-spacing: 1.5px;
+  letter-spacing: 1px;
   font-weight: normal;
   word-spacing: 2px;
   margin: 10px 10px 0em 10px;
-  color: #a5840b;
+  color: #d4b85a;
   font-size: 30px;
   line-height: 1.3
+  
   }
+
+h7 {
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top:40px;
+    font-family: 'Open Sans';
+    letter-spacing: 1.5px;
+    font-weight: normal;
+    word-spacing: 2px;
+    color: #c59a4f;
+    font-size: 40 px;
+    line-height: 1.5
+    }
 
 /* Styling anchor link (hyperlink) */
 a {
@@ -293,11 +313,11 @@ img.size03 {
 }
 
 #fruits {
-  color: orangered;
+  color: rgb(10, 36, 32);
 }
 
 #grains {
-  color: saddlebrown;
+  color: rgb(10, 36, 32);
 }
 /* END styling images */
 
@@ -613,9 +633,10 @@ table#courses tbody td img {
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
   background-color: transparent;
-  width: 300px;
-  height: 300px;
-  margin-bottom: 35px;
+  width: 400px;
+  height: 400px;
+  margin-bottom: 25px;
+  margin-left: 25px;
   border: 1px solid #f1f1f1;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
@@ -657,16 +678,17 @@ table#courses tbody td img {
 /* Style the front side text */
 .flip-card-front-text {
   color: #262727;
-  padding: 10px;
+  padding: 30px;
+  font-size: 1.2em;
 }
 
 /* Style the back side text */
 .flip-card-back-text {
-  color: #339999;
+  color: #f8f8f8;
   position: absolute;
   top: 10px;
   left: 20px;
-  font-size: 1.1em;
+  font-size: 1.3em;
   font-weight: normal;
   letter-spacing: 2px;
 }
